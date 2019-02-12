@@ -14,6 +14,6 @@ public class Controller {
 
 	    @FXML
 	    void mitarbeiteranlegen(ActionEvent event) {
-	    	mitarbeiterliste.appendText(mitarbeitereingabefeld.getText() + "\nn");
+	    	mitarbeiterliste.appendText(mitarbeitereingabefeld.getText() + "\n");
 	    }
 }

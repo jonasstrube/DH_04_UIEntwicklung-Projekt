@@ -1,4 +1,4 @@
-package application;
+package startseite;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

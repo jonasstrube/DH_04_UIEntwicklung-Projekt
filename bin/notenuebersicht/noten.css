@@ -1,1 +1,8 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#lightbg {
+	-fx-background-color: cyan
+}
+
+#darkbg {
+	-fx-background-color: blue
+}

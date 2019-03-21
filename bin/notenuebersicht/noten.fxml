@@ -14,9 +14,10 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
 	minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0"
-	prefWidth="824.0" stylesheets="@noten.css" fx:controller="notenuebersicht.NotenController"
+	prefWidth="824.0" stylesheets="@noten.css"
 	xmlns="http://javafx.com/javafx/10.0.1"
-	xmlns:fx="http://javafx.com/fxml/1">
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="notenuebersicht.NotenController">
 	<center>
 		<GridPane prefHeight="523.0" prefWidth="202.0"
 			BorderPane.alignment="CENTER">
@@ -46,20 +47,21 @@
 							vgrow="SOMETIMES" />
 					</rowConstraints>
 					<children>
-						<Button id="darkbg" mnemonicParsing="false"
-							prefHeight="79.0" prefWidth="136.0" text="Zurück" onAction="#mitarbeiteranlegen"/>
-						<Button id="darkbg" mnemonicParsing="false"
-							prefHeight="79.0" prefWidth="136.0" text="Log out"
-							GridPane.columnIndex="2" />
-						<Text strokeType="OUTSIDE" strokeWidth="0.0"
-							text="Notenübersicht" GridPane.columnIndex="1"
-							GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+						<Button id="backButton" mnemonicParsing="false"
+							onAction="#mitarbeiteranlegen" prefHeight="79.0"
+							prefWidth="136.0" styleClass="darkaccent" text="Zurück" />
+						<Button id="logoutButton" mnemonicParsing="false"
+							prefHeight="79.0" prefWidth="136.0" styleClass="darkaccent"
+							text="Log out" GridPane.columnIndex="2" />
+						<Label fx:id="heading" alignment="CENTER"
+							contentDisplay="CENTER" prefHeight="${heading.parent.width}"
+							prefWidth="${heading.parent.width}" styleClass="lightaccent"
+							text="Notenübersicht" textAlignment="CENTER"
+							GridPane.columnIndex="1">
 							<font>
 								<Font size="28.0" />
 							</font>
-						</Text>
-						<Label text="sdoichdsoichdsiusphcudshcudshcdpcudshcdhcush"
-							GridPane.columnIndex="1" fx:id="lightbg" prefWidth="${lightbg.parent.width}" prefHeight="${lightbg.parent.width}"/>
+						</Label>
 					</children>
 				</GridPane>
 				<GridPane GridPane.rowIndex="1">

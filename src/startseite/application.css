@@ -5,3 +5,11 @@
 #anlagebutton:hover {
 	-fx-border-color: red
 }
+
+#Button1 {
+    background: red;
+}
+
+#Button2 {
+    background: blue;   
+}

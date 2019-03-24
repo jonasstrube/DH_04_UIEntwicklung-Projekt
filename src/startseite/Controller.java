@@ -7,13 +7,5 @@ import javafx.scene.control.TextField;
 
 public class Controller {
 	  	@FXML
-	    private TextField mitarbeitereingabefeld;
-	  	
-	    @FXML
-	    private TextArea mitarbeiterliste;
-
-	    @FXML
-	    void mitarbeiteranlegen(ActionEvent event) {
-	    	mitarbeiterliste.appendText(mitarbeitereingabefeld.getText() + "\n");
-	    }
+	    private String test;
 }

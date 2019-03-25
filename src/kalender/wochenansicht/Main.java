@@ -14,7 +14,7 @@ public class Main extends Application {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("woche.fxml"));
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("noten.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("woche.css").toExternalForm());
 			
 			primaryStage.setScene(scene);
 			primaryStage.show();

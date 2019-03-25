@@ -13,7 +13,7 @@
 <!-- Monatsansicht -->
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="824.0" styleClass="lightbackground" stylesheets="@noten.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notenuebersicht.NotenController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="824.0" styleClass="lightbackground" stylesheets="@woche.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notenuebersicht.NotenController">
 	<center>
 		<GridPane prefHeight="523.0" prefWidth="502.0" BorderPane.alignment="CENTER">
 			<columnConstraints>

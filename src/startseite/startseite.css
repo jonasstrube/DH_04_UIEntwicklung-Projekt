@@ -1,28 +1,30 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
-#mainPane {
-	-fx-background-color: rgb(234,235,235);
+.mainPane {
+    -fx-background-color: rgb(234.0,235.0,235.0);
+    
 }
 
 .navbar{
-    -fx-background-color: rgb(2,136,209);
+    -fx-background-color: rgb(2.0,136.0,209.0);
 }
 
 .button {
-    -fx-background-color: rgb(0,91,159);
-    -fx-color: rgb(0,0,0);
-    -fx-font-size: 20px;
-    -fx-border-radius: 0px;
+    -fx-background-color: rgb(0.0,91.0,159.0);
+    -fx-color: rgb(0.0,0.0,0.0);
+    -fx-font-size: 20.0px;
+    -fx-border-radius: 0.0px;
 }
 
 .button:onpress{
     
 }
 
-.tile {
-    -fx-background-color: rgb(245,245,246);
-    -fx-border-color: rgb(245,245,246);
-    -fx-border-radius: 20px;
-    -fx-padding: 20px;    
+.tile_pane {
+-fx-background-color: rgb(245,245,246); 
+    /*-fx-background-color: red;*/
+    -fx-border-color: rgb(245.0,245.0,246.0);
+    -fx-border-radius: 20.0px;
+    -fx-padding: 20.0px;    
 }
 
 .tile_heading {

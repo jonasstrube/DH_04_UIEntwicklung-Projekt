@@ -1,6 +1,6 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 .mainPane {
-    -fx-background-color: rgb(234.0,235.0,235.0);
+	-fx-background-color: rgb(234.0,235.0,235.0);
     
 }
 

@@ -18,3 +18,11 @@
 .white {
 		-fx-background-color: white
 }
+
+.semesteroverviewpane {
+	-fx-background-radius: 5
+}
+
+.semesteroverviewleftpane {
+	-fx-border-color: red
+}

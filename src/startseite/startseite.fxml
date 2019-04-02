@@ -81,7 +81,7 @@
                                                 <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="220.0" styleClass="tile_pane">
+                                                <Pane id="notenuebersicht" onMouseClicked="#notenuebersicht" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="220.0" styleClass="tile_pane">
                                                    <children>
                                                       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="184.0" prefWidth="204.0">
                                                          <columnConstraints>
@@ -107,7 +107,7 @@
                                                       </GridPane>
                                                    </children>
                                                 </Pane>
-                                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="220.0" styleClass="tile_pane" GridPane.columnIndex="2">
+                                                <Pane id="stundenplan" onMouseClicked="#stundenplan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="220.0" styleClass="tile_pane" GridPane.columnIndex="2">
                                                    <children>
                                                       <GridPane layoutX="6.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="185.0" prefWidth="204.0">
                                                         <columnConstraints>
@@ -136,7 +136,7 @@
                                                 </Pane>
                                              </children>
                                           </GridPane>
-                                          <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="185.0" prefWidth="460.0" styleClass="tile_pane" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                          <Pane id="notenverlauf" onMouseClicked="#notenverlauf" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="185.0" prefWidth="460.0" styleClass="tile_pane" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                              <children>
                                                 <GridPane prefHeight="187.0" prefWidth="455.0">
                                                   <columnConstraints>

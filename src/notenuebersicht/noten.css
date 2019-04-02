@@ -24,5 +24,13 @@
 }
 
 .semesteroverviewleftpane {
+}
+
+.separator {
+	-fx-fill: #0186D9;
+	-fx-stroke-width: 0
+}
+
+.debug {
 	-fx-border-color: red
 }

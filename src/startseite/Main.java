@@ -1,4 +1,4 @@
-package startseite;
+package application.startseite;
 	
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,8 +15,10 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("startseite.css").toExternalForm());
 			
+			
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

@@ -20,47 +20,47 @@
    <center>
       <GridPane prefHeight="523.0" prefWidth="202.0" styleClass="mainPane" BorderPane.alignment="CENTER">
         <columnConstraints>
-          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="475.7999908447265" minHeight="10.0" prefHeight="475.7999908447265" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="95.0" valignment="CENTER" vgrow="ALWAYS" />
         </rowConstraints>
          <children>
-            <GridPane>
+            <GridPane GridPane.halignment="CENTER" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
               <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints maxHeight="1.7976931348623157E308" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" valignment="CENTER" vgrow="ALWAYS" />
               </rowConstraints>
                <padding>
                   <Insets left="100.0" right="100.0" top="50.0" />
                </padding>
                <children>
-                  <GridPane>
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.halignment="CENTER" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                     <columnConstraints>
-                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
                     </columnConstraints>
                     <rowConstraints>
-                      <RowConstraints maxHeight="1.7976931348623157E308" valignment="CENTER" vgrow="ALWAYS" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" valignment="CENTER" vgrow="ALWAYS" />
                     </rowConstraints>
                      <children>
-                        <GridPane prefHeight="278.0" prefWidth="624.0">
+                        <GridPane alignment="BASELINE_CENTER" prefHeight="278.0" prefWidth="624.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                           <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="700.0" minWidth="10.0" prefWidth="700.0" />
                           </columnConstraints>
                           <rowConstraints>
-                            <RowConstraints maxHeight="368.8000122070313" minHeight="10.0" prefHeight="366.99998779296874" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="368.8000122070313" minHeight="10.0" percentHeight="90.0" prefHeight="366.99998779296874" valignment="CENTER" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <GridPane>
+                              <GridPane alignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="65.0" prefWidth="100.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="35.0" prefWidth="100.0" />
                                 </columnConstraints>
                                 <rowConstraints>
-                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="385.0" valignment="CENTER" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
                                     <GridPane>
@@ -83,7 +83,7 @@
                                                 <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" styleClass="tile_pane">
+                                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="220.0" styleClass="tile_pane">
                                                    <children>
                                                       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="184.0" prefWidth="204.0">
                                                          <columnConstraints>
@@ -109,7 +109,7 @@
                                                       </GridPane>
                                                    </children>
                                                 </Pane>
-                                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" styleClass="tile_pane" GridPane.columnIndex="2">
+                                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="220.0" styleClass="tile_pane" GridPane.columnIndex="2">
                                                    <children>
                                                       <GridPane layoutX="6.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="185.0" prefWidth="204.0">
                                                         <columnConstraints>

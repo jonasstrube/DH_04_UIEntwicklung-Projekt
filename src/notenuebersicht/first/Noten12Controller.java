@@ -16,7 +16,7 @@ public class Noten12Controller extends Application{
 	private BorderPane notenuebersicht;
 
 	@FXML
-	private BorderPane basicpane;
+	private BorderPane basicpane12;
 	
 	@FXML
 	private GridPane centerpane;

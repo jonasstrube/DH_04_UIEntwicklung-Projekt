@@ -5,14 +5,19 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 
 public class Noten34Controller {
 	
 	@FXML
 	private BorderPane borderPane;
 	
+	@FXML
+	private GridPane centerpane;
+	
 	private BorderPane notenuebersicht;
 
+	private BorderPane parent;
 
 	
 	@FXML
@@ -22,12 +27,14 @@ public class Noten34Controller {
 	
 	@FXML
 	void zurueck() {
-
+		System.out.println("zurueck!");
 		try {
-			notenuebersicht = FXMLLoader.load(getClass().getResource("../noten12.fxml"));
+			notenuebersicht = FXMLLoader.load(getClass().getResource("../noten.fxml"));
 		} catch(IOException e) {
 			System.out.println("Seite konnte nicht geladen werden");
 		}
-		borderPane.setCenter(notenuebersicht);
+		
+		parent = (BorderPane) centerpane.getParent();
+		parent.setCenter(notenuebersicht.getCenter());
 	}
 }

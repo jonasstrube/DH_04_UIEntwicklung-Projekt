@@ -13,7 +13,7 @@
 
 <!-- Notenübersicht -->
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity"
+<BorderPane fx:id="basicpane" maxHeight="-Infinity" maxWidth="-Infinity"
 	minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0"
 	prefWidth="824.0" styleClass="lightbackground" stylesheets="@../main.css"
 	xmlns="http://javafx.com/javafx/10.0.1"

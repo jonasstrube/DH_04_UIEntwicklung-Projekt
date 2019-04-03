@@ -21,7 +21,7 @@ public class NotenController extends Application{
 
 
 	@FXML
-	private BorderPane borderPane;
+	private BorderPane basicpane;
 	
 	@FXML
 	private GridPane centerpane;
@@ -38,19 +38,19 @@ public class NotenController extends Application{
 	@FXML
 	private void semester12() {
 		System.out.println("semester12!");
-		borderPane.setCenter(semester12Seite.getCenter());
+		basicpane.setCenter(semester12Seite.getCenter());
 	}
 
 	@FXML
 	private void semester34() {
 		System.out.println("semester34!");
-		borderPane.setCenter(semester34Seite.getCenter());
+		basicpane.setCenter(semester34Seite.getCenter());
 	}
 	
 	@FXML
 	protected void initialize() {
 		System.out.println("Method initialize!");
-		System.out.println(borderPane.getHeight());
+		System.out.println(basicpane.getHeight());
 
 		try {
 			semester12Seite = FXMLLoader.load(getClass().getResource("../notenuebersicht/first/noten12.fxml"));

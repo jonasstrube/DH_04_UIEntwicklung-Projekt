@@ -6,14 +6,13 @@ import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class NotenController extends Application{
 
-	private BorderPane noten;
-	
 	private BorderPane startseite;
+	
+	private BorderPane semester12Seite;
 
 	@FXML
 	private BorderPane borderPane;
@@ -32,9 +31,7 @@ public class NotenController extends Application{
 	@FXML
 	private void semester12() {
 		System.out.println("semester12!");
-		System.out.println(borderPane.getHeight());
-		
-
+		borderPane.setCenter(semester12Seite.getCenter());
 	}
 
 	@FXML
@@ -47,9 +44,10 @@ public class NotenController extends Application{
 		System.out.println("Method initialize!");
 		System.out.println(borderPane.getHeight());
 		try {
-			startseite = FXMLLoader.load(getClass().getResource("../startseite/startseite.fxml"));
+			semester12Seite = FXMLLoader.load(getClass().getResource("../notenuebersicht/first/noten.fxml"));
+			//startseite = FXMLLoader.load(getClass().getResource("../startseite/startseite.fxml"));
 		} catch(IOException e) {
-			
+			System.out.println(e.getMessage());
 		}
 
 	}

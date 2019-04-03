@@ -31,4 +31,6 @@
 	-fx-stroke-width: 0
 }
 
-.debug {}
+.debug {
+	-fx-border-color: transparent
+}

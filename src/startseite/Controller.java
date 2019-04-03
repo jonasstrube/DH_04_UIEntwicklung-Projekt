@@ -1,4 +1,4 @@
-package src.startseite;
+package startseite;
 
 import java.io.IOException;
 

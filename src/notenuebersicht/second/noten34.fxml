@@ -15,10 +15,10 @@
 
 <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity"
 	minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0"
-	prefWidth="824.0" styleClass="lightbackground" stylesheets="@../../main.css"
+	prefWidth="824.0" styleClass="lightbackground" stylesheets="@noten.css"
 	xmlns="http://javafx.com/javafx/10.0.1"
 	xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="notenuebersicht.first.NotenController">
+	fx:controller="notenuebersicht.second.Noten34Controller">
 	<center>
 		<GridPane prefHeight="523.0" prefWidth="502.0" BorderPane.alignment="CENTER">
 			<columnConstraints>
@@ -40,8 +40,8 @@
 					</rowConstraints>
 					<children>
 						<Button id="backButton" mnemonicParsing="false" onAction="#zurueck" prefHeight="79.0" prefWidth="136.0" styleClass="darkaccent" text="Zurück" textFill="WHITE" />
-						<Button id="logoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="79.0" prefWidth="136.0" styleClass="darkaccent" text="Log out" textFill="WHITE" GridPane.columnIndex="2" />
-						<Label fx:id="heading" alignment="CENTER" contentDisplay="CENTER" prefHeight="${heading.parent.width}" prefWidth="${heading.parent.width}" styleClass="lightaccent" text="Notenübersicht" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+						<Button id="logoutButton" mnemonicParsing="false" prefHeight="79.0" prefWidth="136.0" styleClass="darkaccent" text="Log out" textFill="WHITE" GridPane.columnIndex="2" />
+						<Label fx:id="heading" alignment="CENTER" contentDisplay="CENTER" prefHeight="${heading.parent.width}" prefWidth="${heading.parent.width}" styleClass="lightaccent" text="Notenübersicht 34" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
 							<font>
 								<Font size="28.0" />
 							</font>
@@ -86,7 +86,7 @@
 												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 											</rowConstraints>
 											<children>
-												<GridPane onMouseClicked="#semester12" prefHeight="80.8" prefWidth="624.0">
+												<GridPane prefHeight="80.8" prefWidth="624.0">
 													<columnConstraints>
 														<ColumnConstraints percentWidth="90.0"/>
 														<ColumnConstraints percentWidth="10.0"/>
@@ -133,7 +133,7 @@
 														<Rectangle id="b" Height="10" Stroke="Black" Width="1" height="80.0" styleClass="separator" GridPane.halignment="RIGHT" />
 													</children>
 												</GridPane>
-												<GridPane onMouseClicked="#semester34" prefHeight="80.8" prefWidth="624.0" GridPane.rowIndex="1">
+												<GridPane prefHeight="80.8" prefWidth="624.0" GridPane.rowIndex="1">
 													<columnConstraints>
 														<ColumnConstraints percentWidth="90.0"/>
 														<ColumnConstraints percentWidth="10.0"/>

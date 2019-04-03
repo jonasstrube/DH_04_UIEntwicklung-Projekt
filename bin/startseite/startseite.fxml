@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!-- Notenübersicht -->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane prefHeight="523.0" prefWidth="202.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="475.7999908447265" minHeight="10.0" prefHeight="475.7999908447265" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="100.0" right="100.0" top="50.0" />
+               </padding>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane prefHeight="278.0" prefWidth="624.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="424.79998779296875" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.20001220703125" minWidth="10.0" prefWidth="199.20001220703125" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="322.0000061035156" minHeight="10.0" prefHeight="300.8000122070313" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="206.79999389648438" minHeight="10.0" prefHeight="124.79998779296875" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_heading" text="Notenübersicht" />
+                                          <ImageView fitHeight="50.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true" styleClass="tile_image" GridPane.rowIndex="1" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_caption" text="Neueste Note: 1,3 in Statistik" GridPane.rowIndex="2" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_heading" text="Stundenplan" GridPane.columnIndex="1" />
+                                          <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                            <columnConstraints>
+                                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_caption" text="Nächste Vorlesung:">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_caption" text="UI- Entwicklung in 2h 34min" wrappingWidth="101.5999755859375" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.vgrow="ALWAYS">
+                                                   <GridPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </GridPane.margin>
+                                                </Text>
+                                             </children>
+                                          </GridPane>
+                                          <ImageView fitHeight="50.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true" styleClass="tile_image" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <GridPane styleClass="navbar" BorderPane.alignment="BOTTOM_CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="45.0" valignment="CENTER" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MyStudium" GridPane.columnIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+            </Text>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="55.0" prefWidth="100.0" text="Button" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </top>
+</BorderPane>

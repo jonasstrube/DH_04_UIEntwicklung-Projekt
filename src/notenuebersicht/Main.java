@@ -15,6 +15,8 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("noten.css").toExternalForm());
 			
+			primaryStage.setMinHeight(600);
+			primaryStage.setMinWidth(1000);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {

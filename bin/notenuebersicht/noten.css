@@ -18,3 +18,17 @@
 .white {
 		-fx-background-color: white
 }
+
+.semesteroverviewpane {
+	-fx-background-radius: 5
+}
+
+.semesteroverviewleftpane {
+}
+
+.separator {
+	-fx-fill: #0186D9;
+	-fx-stroke-width: 0
+}
+
+.debug {}

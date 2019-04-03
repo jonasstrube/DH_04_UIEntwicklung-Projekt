@@ -13,7 +13,6 @@ public class Main extends Application {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("noten.fxml"));
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("noten.css").toExternalForm());
 			
 			primaryStage.setMinHeight(600);
 			primaryStage.setMinWidth(1000);

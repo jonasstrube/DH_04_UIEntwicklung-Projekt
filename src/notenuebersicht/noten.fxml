@@ -13,7 +13,12 @@
 
 <!-- Notenübersicht -->
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="824.0" styleClass="lightbackground" stylesheets="@noten.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notenuebersicht.NotenController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0"
+	prefWidth="824.0" styleClass="lightbackground" stylesheets="@noten.css"
+	xmlns="http://javafx.com/javafx/10.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="notenuebersicht.NotenController">
 	<center>
 		<GridPane prefHeight="523.0" prefWidth="502.0" BorderPane.alignment="CENTER">
 			<columnConstraints>
@@ -121,6 +126,100 @@
                                              </styleClass>
 														</GridPane>
 														<Label styleClass="debug" text="1.4" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+															<font>
+																<Font size="18.0" />
+															</font>
+														</Label>
+														<Rectangle id="b" Height="10" Stroke="Black" Width="1" height="80.0" styleClass="separator" GridPane.halignment="RIGHT" />
+													</children>
+												</GridPane>
+												<GridPane prefHeight="80.8" prefWidth="624.0" GridPane.rowIndex="1">
+													<columnConstraints>
+														<ColumnConstraints percentWidth="90.0"/>
+														<ColumnConstraints percentWidth="10.0"/>
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<GridPane.margin>
+														<Insets bottom="20.0" />
+													</GridPane.margin>
+													<styleClass>
+														<String fx:value="white" />
+														<String fx:value="semesteroverviewpane" />
+                                          <String fx:value="debug" />
+													</styleClass>
+													<children>
+														<GridPane>
+															<columnConstraints>
+																<ColumnConstraints hgrow="SOMETIMES" maxWidth="3000.0" minWidth="20.0" percentWidth="10.0" prefWidth="100.0" />
+																<ColumnConstraints hgrow="SOMETIMES" maxWidth="1000.0" minWidth="10.0" percentWidth="90.0" />
+															</columnConstraints>
+															<rowConstraints>
+																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+																<RowConstraints minHeight="10.0" percentHeight="80.0" prefHeight="30.0" vgrow="SOMETIMES" />
+																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+															</rowConstraints>
+															<children>
+																<Label styleClass="debug" text="Semester 3 &amp; 4" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+																	<font>
+																		<Font size="18.0" />
+																	</font>
+																</Label>
+															</children>
+                                             <styleClass>
+                                                <String fx:value="semesteroverviewleftpane" />
+                                                <String fx:value="debug" />
+                                             </styleClass>
+														</GridPane>
+														<Label styleClass="debug" text="1.6" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+															<font>
+																<Font size="18.0" />
+															</font>
+														</Label>
+														<Rectangle id="b" Height="10" Stroke="Black" Width="1" height="80.0" styleClass="separator" GridPane.halignment="RIGHT" />
+													</children>
+												</GridPane>
+												<GridPane prefHeight="80.8" prefWidth="624.0" GridPane.rowIndex="2">
+													<columnConstraints>
+														<ColumnConstraints percentWidth="90.0"/>
+														<ColumnConstraints percentWidth="10.0"/>
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<GridPane.margin>
+														<Insets bottom="20.0" />
+													</GridPane.margin>
+													<styleClass>
+														<String fx:value="white" />
+														<String fx:value="semesteroverviewpane" />
+                                          <String fx:value="debug" />
+													</styleClass>
+													<children>
+														<GridPane>
+															<columnConstraints>
+																<ColumnConstraints hgrow="SOMETIMES" maxWidth="3000.0" minWidth="20.0" percentWidth="10.0" prefWidth="100.0" />
+																<ColumnConstraints hgrow="SOMETIMES" maxWidth="1000.0" minWidth="10.0" percentWidth="90.0" />
+															</columnConstraints>
+															<rowConstraints>
+																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+																<RowConstraints minHeight="10.0" percentHeight="80.0" prefHeight="30.0" vgrow="SOMETIMES" />
+																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+															</rowConstraints>
+															<children>
+																<Label styleClass="debug" text="Semester 5 &amp; 6" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+																	<font>
+																		<Font size="18.0" />
+																	</font>
+																</Label>
+															</children>
+                                             <styleClass>
+                                                <String fx:value="semesteroverviewleftpane" />
+                                                <String fx:value="debug" />
+                                             </styleClass>
+														</GridPane>
+														<Label styleClass="debug" text="" GridPane.columnIndex="1" GridPane.halignment="CENTER">
 															<font>
 																<Font size="18.0" />
 															</font>

@@ -31,6 +31,4 @@
 	-fx-stroke-width: 0
 }
 
-.debug {
-	-fx-border-color: red
-}
+.debug {}

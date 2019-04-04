@@ -28,7 +28,7 @@ public class Controller extends Application {
     @FXML
     private void notenuebersicht() {
         System.out.println("notenuebersicht");
-        borderPane.setCenter(noten);
+        borderPane.setCenter(noten.getCenter());
     }
 
     @FXML

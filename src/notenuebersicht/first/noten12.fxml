@@ -13,220 +13,284 @@
 
 <!-- Notenübersicht -->
 
-<BorderPane fx:id="basicpane12" maxHeight="-Infinity" maxWidth="-Infinity"
-	minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0"
-	prefWidth="824.0" styleClass="lightbackground" stylesheets="@../../main.css"
-	xmlns="http://javafx.com/javafx/10.0.1"
-	xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="notenuebersicht.first.Noten12Controller">
-	<center>
-		<GridPane fx:id="centerpane" prefHeight="523.0" prefWidth="502.0" BorderPane.alignment="CENTER">
+<GridPane fx:id="basicpane12" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="523.0" prefWidth="824.0" styleClass="lightbackground"
+	stylesheets="@../../main.css" xmlns="http://javafx.com/javafx/10.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"	fx:controller="first.Noten12Controller">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+			prefWidth="100.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="47.0" minHeight="47.0"
+			prefHeight="47.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0"
+			prefHeight="4075.7999908447265" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<GridPane>
 			<columnConstraints>
-				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES"
+					maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+				<ColumnConstraints hgrow="SOMETIMES"
+					minWidth="10.0" prefWidth="572.999951171875" />
+				<ColumnConstraints hgrow="SOMETIMES"
+					maxWidth="120.0" minWidth="120.0" prefWidth="120.0" />
 			</columnConstraints>
 			<rowConstraints>
-				<RowConstraints maxHeight="47.0" minHeight="47.0" prefHeight="47.0" vgrow="SOMETIMES" />
-				<RowConstraints minHeight="10.0" prefHeight="4075.7999908447265" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
 			</rowConstraints>
 			<children>
-				<GridPane>
+				<Button id="backButton" mnemonicParsing="false"
+					onAction="#zurueck" prefHeight="79.0" prefWidth="136.0"
+					styleClass="darkaccent" text="Zurück" textFill="WHITE" />
+				<Button id="logoutButton" mnemonicParsing="false"
+					onAction="#logout" prefHeight="79.0" prefWidth="136.0"
+					styleClass="darkaccent" text="Log out" textFill="WHITE"
+					GridPane.columnIndex="2" />
+				<Label fx:id="heading" alignment="CENTER"
+					contentDisplay="CENTER" prefHeight="${heading.parent.width}"
+					prefWidth="${heading.parent.width}" styleClass="lightaccent"
+					text="Notenübersicht 12" textAlignment="CENTER" textFill="WHITE"
+					GridPane.columnIndex="1" GridPane.halignment="CENTER">
+					<font>
+						<Font size="28.0" />
+					</font>
+				</Label>
+			</children>
+		</GridPane>
+		<GridPane styleClass="debug" GridPane.rowIndex="1">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES"
+					minWidth="10.0" prefWidth="100.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+			</rowConstraints>
+			<padding>
+				<Insets left="100.0" right="100.0" top="50.0" />
+			</padding>
+			<children>
+				<GridPane styleClass="debug">
 					<columnConstraints>
-						<ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
-						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="572.999951171875" />
-						<ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" />
+						<ColumnConstraints hgrow="SOMETIMES"
+							minWidth="10.0" prefWidth="100.0" />
 					</columnConstraints>
 					<rowConstraints>
-						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
 					</rowConstraints>
 					<children>
-						<Button id="backButton" mnemonicParsing="false" onAction="#zurueck" prefHeight="79.0" prefWidth="136.0" styleClass="darkaccent" text="Zurück" textFill="WHITE" />
-						<Button id="logoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="79.0" prefWidth="136.0" styleClass="darkaccent" text="Log out" textFill="WHITE" GridPane.columnIndex="2" />
-						<Label fx:id="heading" alignment="CENTER" contentDisplay="CENTER" prefHeight="${heading.parent.width}" prefWidth="${heading.parent.width}" styleClass="lightaccent" text="Notenübersicht 12" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
-							<font>
-								<Font size="28.0" />
-							</font>
-						</Label>
-					</children>
-				</GridPane>
-				<GridPane styleClass="debug" GridPane.rowIndex="1">
-					<columnConstraints>
-						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-					</columnConstraints>
-					<rowConstraints>
-						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-					</rowConstraints>
-					<padding>
-						<Insets left="100.0" right="100.0" top="50.0" />
-					</padding>
-					<children>
-						<GridPane styleClass="debug">
+						<GridPane prefHeight="278.0" prefWidth="624.0"
+							styleClass="debug">
 							<columnConstraints>
-								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+								<ColumnConstraints hgrow="SOMETIMES"
+									minWidth="10.0" prefWidth="100.0" />
 							</columnConstraints>
 							<rowConstraints>
-								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints maxHeight="3022.0000061035156"
+									minHeight="10.0" prefHeight="300.8000122070313"
+									vgrow="SOMETIMES" />
+								<RowConstraints maxHeight="2006.79999389648438"
+									minHeight="10.0" prefHeight="124.79998779296875"
+									vgrow="SOMETIMES" />
 							</rowConstraints>
 							<children>
-								<GridPane prefHeight="278.0" prefWidth="624.0" styleClass="debug">
+								<GridPane styleClass="debug">
 									<columnConstraints>
-										<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+										<ColumnConstraints hgrow="SOMETIMES"
+											minWidth="10.0" prefWidth="100.0" />
 									</columnConstraints>
 									<rowConstraints>
-										<RowConstraints maxHeight="3022.0000061035156" minHeight="10.0" prefHeight="300.8000122070313" vgrow="SOMETIMES" />
-										<RowConstraints maxHeight="2006.79999389648438" minHeight="10.0" prefHeight="124.79998779296875" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="30.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="30.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="30.0" vgrow="SOMETIMES" />
 									</rowConstraints>
 									<children>
-										<GridPane styleClass="debug">
+										<GridPane onMouseClicked="#semester12"
+											prefHeight="80.8" prefWidth="624.0">
 											<columnConstraints>
-												<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+												<ColumnConstraints percentWidth="90.0" />
+												<ColumnConstraints percentWidth="10.0" />
 											</columnConstraints>
 											<rowConstraints>
-												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-												<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints minHeight="10.0"
+													prefHeight="30.0" vgrow="SOMETIMES" />
 											</rowConstraints>
+											<GridPane.margin>
+												<Insets bottom="20.0" />
+											</GridPane.margin>
+											<styleClass>
+												<String fx:value="white" />
+												<String fx:value="semesteroverviewpane" />
+												<String fx:value="debug" />
+											</styleClass>
 											<children>
-												<GridPane onMouseClicked="#semester12" prefHeight="80.8" prefWidth="624.0">
+												<GridPane>
 													<columnConstraints>
-														<ColumnConstraints percentWidth="90.0"/>
-														<ColumnConstraints percentWidth="10.0"/>
+														<ColumnConstraints hgrow="SOMETIMES"
+															maxWidth="3000.0" minWidth="20.0" percentWidth="10.0"
+															prefWidth="100.0" />
+														<ColumnConstraints hgrow="SOMETIMES"
+															maxWidth="1000.0" minWidth="10.0" percentWidth="90.0" />
 													</columnConstraints>
 													<rowConstraints>
-														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="0.0"
+															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0"
+															percentHeight="80.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="0.0"
+															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 													</rowConstraints>
-													<GridPane.margin>
-														<Insets bottom="20.0" />
-													</GridPane.margin>
-													<styleClass>
-														<String fx:value="white" />
-														<String fx:value="semesteroverviewpane" />
-                                          <String fx:value="debug" />
-													</styleClass>
 													<children>
-														<GridPane>
-															<columnConstraints>
-																<ColumnConstraints hgrow="SOMETIMES" maxWidth="3000.0" minWidth="20.0" percentWidth="10.0" prefWidth="100.0" />
-																<ColumnConstraints hgrow="SOMETIMES" maxWidth="1000.0" minWidth="10.0" percentWidth="90.0" />
-															</columnConstraints>
-															<rowConstraints>
-																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-																<RowConstraints minHeight="10.0" percentHeight="80.0" prefHeight="30.0" vgrow="SOMETIMES" />
-																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-															</rowConstraints>
-															<children>
-																<Label styleClass="debug" text="Semester 1 &amp; 2" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-																	<font>
-																		<Font size="18.0" />
-																	</font>
-																</Label>
-															</children>
-                                             <styleClass>
-                                                <String fx:value="semesteroverviewleftpane" />
-                                                <String fx:value="debug" />
-                                             </styleClass>
-														</GridPane>
-														<Label styleClass="debug" text="1.4" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+														<Label styleClass="debug" text="Semester 1 &amp; 2"
+															GridPane.columnIndex="1" GridPane.halignment="LEFT"
+															GridPane.rowIndex="1" GridPane.valignment="CENTER">
 															<font>
 																<Font size="18.0" />
 															</font>
 														</Label>
-														<Rectangle id="b" Height="10" Stroke="Black" Width="1" height="80.0" styleClass="separator" GridPane.halignment="RIGHT" />
 													</children>
+													<styleClass>
+														<String fx:value="semesteroverviewleftpane" />
+														<String fx:value="debug" />
+													</styleClass>
 												</GridPane>
-												<GridPane onMouseClicked="#semester34" prefHeight="80.8" prefWidth="624.0" GridPane.rowIndex="1">
+												<Label styleClass="debug" text="1.4"
+													GridPane.columnIndex="1" GridPane.halignment="CENTER">
+													<font>
+														<Font size="18.0" />
+													</font>
+												</Label>
+												<Rectangle id="b" Height="10" Stroke="Black"
+													Width="1" height="80.0" styleClass="separator"
+													GridPane.halignment="RIGHT" />
+											</children>
+										</GridPane>
+										<GridPane onMouseClicked="#semester34"
+											prefHeight="80.8" prefWidth="624.0" GridPane.rowIndex="1">
+											<columnConstraints>
+												<ColumnConstraints percentWidth="90.0" />
+												<ColumnConstraints percentWidth="10.0" />
+											</columnConstraints>
+											<rowConstraints>
+												<RowConstraints minHeight="10.0"
+													prefHeight="30.0" vgrow="SOMETIMES" />
+											</rowConstraints>
+											<GridPane.margin>
+												<Insets bottom="20.0" />
+											</GridPane.margin>
+											<styleClass>
+												<String fx:value="white" />
+												<String fx:value="semesteroverviewpane" />
+												<String fx:value="debug" />
+											</styleClass>
+											<children>
+												<GridPane>
 													<columnConstraints>
-														<ColumnConstraints percentWidth="90.0"/>
-														<ColumnConstraints percentWidth="10.0"/>
+														<ColumnConstraints hgrow="SOMETIMES"
+															maxWidth="3000.0" minWidth="20.0" percentWidth="10.0"
+															prefWidth="100.0" />
+														<ColumnConstraints hgrow="SOMETIMES"
+															maxWidth="1000.0" minWidth="10.0" percentWidth="90.0" />
 													</columnConstraints>
 													<rowConstraints>
-														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="0.0"
+															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0"
+															percentHeight="80.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="0.0"
+															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 													</rowConstraints>
-													<GridPane.margin>
-														<Insets bottom="20.0" />
-													</GridPane.margin>
-													<styleClass>
-														<String fx:value="white" />
-														<String fx:value="semesteroverviewpane" />
-                                          <String fx:value="debug" />
-													</styleClass>
 													<children>
-														<GridPane>
-															<columnConstraints>
-																<ColumnConstraints hgrow="SOMETIMES" maxWidth="3000.0" minWidth="20.0" percentWidth="10.0" prefWidth="100.0" />
-																<ColumnConstraints hgrow="SOMETIMES" maxWidth="1000.0" minWidth="10.0" percentWidth="90.0" />
-															</columnConstraints>
-															<rowConstraints>
-																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-																<RowConstraints minHeight="10.0" percentHeight="80.0" prefHeight="30.0" vgrow="SOMETIMES" />
-																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-															</rowConstraints>
-															<children>
-																<Label styleClass="debug" text="Semester 3 &amp; 4" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-																	<font>
-																		<Font size="18.0" />
-																	</font>
-																</Label>
-															</children>
-                                             <styleClass>
-                                                <String fx:value="semesteroverviewleftpane" />
-                                                <String fx:value="debug" />
-                                             </styleClass>
-														</GridPane>
-														<Label styleClass="debug" text="1.6" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+														<Label styleClass="debug" text="Semester 3 &amp; 4"
+															GridPane.columnIndex="1" GridPane.halignment="LEFT"
+															GridPane.rowIndex="1" GridPane.valignment="CENTER">
 															<font>
 																<Font size="18.0" />
 															</font>
 														</Label>
-														<Rectangle id="b" Height="10" Stroke="Black" Width="1" height="80.0" styleClass="separator" GridPane.halignment="RIGHT" />
 													</children>
+													<styleClass>
+														<String fx:value="semesteroverviewleftpane" />
+														<String fx:value="debug" />
+													</styleClass>
 												</GridPane>
-												<GridPane prefHeight="80.8" prefWidth="624.0" GridPane.rowIndex="2">
+												<Label styleClass="debug" text="1.6"
+													GridPane.columnIndex="1" GridPane.halignment="CENTER">
+													<font>
+														<Font size="18.0" />
+													</font>
+												</Label>
+												<Rectangle id="b" Height="10" Stroke="Black"
+													Width="1" height="80.0" styleClass="separator"
+													GridPane.halignment="RIGHT" />
+											</children>
+										</GridPane>
+										<GridPane prefHeight="80.8" prefWidth="624.0"
+											GridPane.rowIndex="2">
+											<columnConstraints>
+												<ColumnConstraints percentWidth="90.0" />
+												<ColumnConstraints percentWidth="10.0" />
+											</columnConstraints>
+											<rowConstraints>
+												<RowConstraints minHeight="10.0"
+													prefHeight="30.0" vgrow="SOMETIMES" />
+											</rowConstraints>
+											<GridPane.margin>
+												<Insets bottom="20.0" />
+											</GridPane.margin>
+											<styleClass>
+												<String fx:value="white" />
+												<String fx:value="semesteroverviewpane" />
+												<String fx:value="debug" />
+											</styleClass>
+											<children>
+												<GridPane>
 													<columnConstraints>
-														<ColumnConstraints percentWidth="90.0"/>
-														<ColumnConstraints percentWidth="10.0"/>
+														<ColumnConstraints hgrow="SOMETIMES"
+															maxWidth="3000.0" minWidth="20.0" percentWidth="10.0"
+															prefWidth="100.0" />
+														<ColumnConstraints hgrow="SOMETIMES"
+															maxWidth="1000.0" minWidth="10.0" percentWidth="90.0" />
 													</columnConstraints>
 													<rowConstraints>
-														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="0.0"
+															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0"
+															percentHeight="80.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="0.0"
+															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 													</rowConstraints>
-													<GridPane.margin>
-														<Insets bottom="20.0" />
-													</GridPane.margin>
-													<styleClass>
-														<String fx:value="white" />
-														<String fx:value="semesteroverviewpane" />
-                                          <String fx:value="debug" />
-													</styleClass>
 													<children>
-														<GridPane>
-															<columnConstraints>
-																<ColumnConstraints hgrow="SOMETIMES" maxWidth="3000.0" minWidth="20.0" percentWidth="10.0" prefWidth="100.0" />
-																<ColumnConstraints hgrow="SOMETIMES" maxWidth="1000.0" minWidth="10.0" percentWidth="90.0" />
-															</columnConstraints>
-															<rowConstraints>
-																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-																<RowConstraints minHeight="10.0" percentHeight="80.0" prefHeight="30.0" vgrow="SOMETIMES" />
-																<RowConstraints minHeight="0.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-															</rowConstraints>
-															<children>
-																<Label styleClass="debug" text="Semester 5 &amp; 6" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-																	<font>
-																		<Font size="18.0" />
-																	</font>
-																</Label>
-															</children>
-                                             <styleClass>
-                                                <String fx:value="semesteroverviewleftpane" />
-                                                <String fx:value="debug" />
-                                             </styleClass>
-														</GridPane>
-														<Label styleClass="debug" text="" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+														<Label styleClass="debug" text="Semester 5 &amp; 6"
+															GridPane.columnIndex="1" GridPane.halignment="LEFT"
+															GridPane.rowIndex="1" GridPane.valignment="CENTER">
 															<font>
 																<Font size="18.0" />
 															</font>
 														</Label>
-														<Rectangle id="b" Height="10" Stroke="Black" Width="1" height="80.0" styleClass="separator" GridPane.halignment="RIGHT" />
 													</children>
+													<styleClass>
+														<String fx:value="semesteroverviewleftpane" />
+														<String fx:value="debug" />
+													</styleClass>
 												</GridPane>
+												<Label styleClass="debug" text=""
+													GridPane.columnIndex="1" GridPane.halignment="CENTER">
+													<font>
+														<Font size="18.0" />
+													</font>
+												</Label>
+												<Rectangle id="b" Height="10" Stroke="Black"
+													Width="1" height="80.0" styleClass="separator"
+													GridPane.halignment="RIGHT" />
 											</children>
 										</GridPane>
 									</children>
@@ -237,5 +301,6 @@
 				</GridPane>
 			</children>
 		</GridPane>
-	</center>
-</BorderPane>
+	</children>
+</GridPane>
+		

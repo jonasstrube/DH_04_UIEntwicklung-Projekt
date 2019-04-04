@@ -8,29 +8,30 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import navigation.NavigationHandler;
 
-public class NotenController extends Application{
-	
-	private BorderPane parent;
-	
-	private BorderPane startseite;
-	
-	private BorderPane semester12Seite;
-	
-	private BorderPane semester34Seite;
+public class NotenController extends Application {
 
+	private GridPane semester12Seite;
+
+	private GridPane semester34Seite;
+
+	@FXML
 	private BorderPane rootPane;
-	
+
 	@FXML
 	private BorderPane basicpane;
-	
+
 	@FXML
 	private GridPane centerpane;
 
 	@FXML
 	private void zurueck() {
+		System.out.println("zurueck!");
+		NavigationHandler.navigateBack();
+		;
 	}
-	
+
 	@FXML
 	private void logout() {
 		System.out.println("logout!");
@@ -39,26 +40,22 @@ public class NotenController extends Application{
 	@FXML
 	private void semester12() {
 		System.out.println("semester12!");
-		rootPane.setCenter(semester12Seite.getCenter());
+		NavigationHandler.setBackFillPane(centerpane);
+		NavigationHandler.navigateTo(semester12Seite);
 	}
 
 	@FXML
 	private void semester34() {
 		System.out.println("semester34!");
-		basicpane.setCenter(semester34Seite.getCenter());
+		NavigationHandler.setBackFillPane(centerpane);
+		NavigationHandler.navigateTo(semester34Seite);
 	}
-	
+
 	@FXML
 	protected void initialize() {
 		System.out.println("Method initialize!");
-		System.out.println(basicpane.getHeight());
 
-		try {
-			semester12Seite = FXMLLoader.load(getClass().getResource("../notenuebersicht/first/noten12.fxml"));
-			semester34Seite = FXMLLoader.load(getClass().getResource("../notenuebersicht/second/noten34.fxml"));
-		} catch(IOException e) {
-			System.out.println(e.getMessage());
-		}
+		NavigationHandler.setRootPane(rootPane);
 
 	}
 

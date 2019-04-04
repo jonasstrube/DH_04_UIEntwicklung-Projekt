@@ -19,7 +19,8 @@ public class NotenController extends Application{
 	
 	private BorderPane semester34Seite;
 
-
+	private BorderPane rootPane;
+	
 	@FXML
 	private BorderPane basicpane;
 	
@@ -38,7 +39,7 @@ public class NotenController extends Application{
 	@FXML
 	private void semester12() {
 		System.out.println("semester12!");
-		basicpane.setCenter(semester12Seite.getCenter());
+		rootPane.setCenter(semester12Seite.getCenter());
 	}
 
 	@FXML

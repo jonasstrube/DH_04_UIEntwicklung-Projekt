@@ -1,36 +1,88 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* --- JONAS --- */
 .lightaccent {
-	-fx-background-color: #0186D9
+    -fx-background-color: #0186D9
 }
 
 .darkaccent {
-	-fx-background-color: #015C9B
+    -fx-background-color: #015C9B
 }
 
 .lightbackground {
-	-fx-background-color: #EBEBEB
+    -fx-background-color: #EBEBEB
 }
 
 .darkbackground {
-	-fx-background-color: #D7D7D7
+    -fx-background-color: #D7D7D7
 }
 
 .white {
-		-fx-background-color: white
+        -fx-background-color: white
 }
 
 .semesteroverviewpane {
-	-fx-background-radius: 5
+    -fx-background-radius: 5
 }
 
 .semesteroverviewleftpane {
 }
 
 .separator {
-	-fx-fill: #0186D9;
-	-fx-stroke-width: 0
+    -fx-fill: #0186D9;
+    -fx-stroke-width: 0
 }
 
 .debug {
-	-fx-border-color: transparent
+    -fx-border-color: transparent
+}
+
+/* --- YANNICK ---*/
+
+.mainPane {
+    -fx-background-color: rgb(234.0,235.0,235.0);
+    
+}
+
+.navbar{
+    -fx-background-color: rgb(2.0,136.0,209.0);
+}
+
+.button {
+    -fx-background-color: rgb(0.0,91.0,159.0);
+    -fx-color: rgb(0.0,0.0,0.0);
+    -fx-font-size: 20.0px;
+    -fx-border-radius: 0.0px;
+}
+
+.button:hover{
+    -fx-border-color: white;
+    -fx-border-width: 1.5px;
+}
+
+.button:onpress{
+    -fx-background-color: rgb(0.0,91.0,159.0, 0.8);    
+}
+
+.tile_pane {
+-fx-background-color: rgb(245,245,246); 
+    -fx-border-color: rgb(245.0,245.0,246.0);
+    -fx-border-radius: 20.0px;
+    -fx-padding: 20.0px;    
+}
+
+.tile_pane:hover{
+    -fx-border-color: white;
+    -fx-border-width: 2.5px;
+}
+
+.tile_heading {
+ 
+}
+
+.tile_image{
+    
+   
+}
+
+.tile_caption{
+    
 }

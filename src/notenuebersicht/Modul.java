@@ -1,20 +1,23 @@
 package notenuebersicht;
 
+import java.util.List;
+
 import kalender.main.Veranstaltung;
 
 public class Modul {
-	private Veranstaltung[] veranstaltungen;
-	private int note;
-	public Veranstaltung[] getVeranstaltungen() {
+	private List<Veranstaltung> veranstaltungen;
+	private double note;
+	
+	public List<Veranstaltung> getVeranstaltungen() {
 		return veranstaltungen;
 	}
-	public void setVeranstaltungen(Veranstaltung[] veranstaltungen) {
+	public void setVeranstaltungen(List<Veranstaltung> veranstaltungen) {
 		this.veranstaltungen = veranstaltungen;
 	}
-	public int getNote() {
+	public double getNote() {
 		return note;
 	}
-	public void setNote(int note) {
+	public void setNote(double note) {
 		this.note = note;
 	}
 }

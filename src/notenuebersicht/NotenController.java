@@ -3,6 +3,7 @@ package notenuebersicht;
 import java.io.IOException;
 import java.util.List;
 
+import data.DataProvider;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

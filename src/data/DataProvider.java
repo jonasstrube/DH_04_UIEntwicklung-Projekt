@@ -1,9 +1,10 @@
-package notenuebersicht;
+package data;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import kalender.main.Veranstaltung;
+import notenuebersicht.Modul;
 
 public class DataProvider {
 	private static List<Modul> semester1;

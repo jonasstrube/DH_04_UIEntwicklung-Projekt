@@ -13,7 +13,7 @@
 
 <!-- Kalender Wochenansicht -->
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="824.0" styleClass="lightbackground" stylesheets="@main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kalender.wochenansicht.WochenController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="824.0" styleClass="lightbackground" stylesheets="@../../main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kalender.wochenansicht.WochenController">
 	<center>
 		<GridPane prefHeight="523.0" prefWidth="502.0" BorderPane.alignment="CENTER">
 			<columnConstraints>

@@ -14,7 +14,7 @@
 
 <!-- Notenübersicht -->
 
-<BorderPane id="borderPane" fx:id="borderPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" styleClass="main_pane" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.startseite.Controller">
+<BorderPane id="borderPane" fx:id="borderPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" styleClass="main_pane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.startseite.Controller">
    <center>
       <GridPane id="mainGridPane" styleClass="mainPane" BorderPane.alignment="CENTER">
          <columnConstraints>

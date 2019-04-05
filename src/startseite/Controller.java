@@ -40,7 +40,7 @@ public class Controller extends Application {
     protected void initialize() {
         System.out.println("Method initialize!");
         try {
-            noten = FXMLLoader.load(getClass().getResource("/src/notenuebersicht/noten.fxml"));
+            noten = FXMLLoader.load(getClass().getResource("../notenuebersicht/noten.fxml"));
         } catch(IOException e) {
             e.printStackTrace();
         }

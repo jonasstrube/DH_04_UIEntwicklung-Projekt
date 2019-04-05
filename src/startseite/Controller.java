@@ -98,7 +98,7 @@ public class Controller extends Application {
         
         try {
             noten = FXMLLoader.load(getClass().getResource("../notenuebersicht/noten.fxml"));
-            stundenplan = FXMLLoader.load(getClass().getResource("../kalender/wochenansicht/woche.fxml"));
+            stundenplan = FXMLLoader.load(getClass().getResource("../kalender/wochenansicht/woche2.fxml"));
         } catch(IOException e) {
             e.printStackTrace();
         } 

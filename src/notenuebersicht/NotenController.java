@@ -15,10 +15,6 @@ import navigation.NavigationHandler;
 public class NotenController extends Application {
 	
 	private DataProvider provider;
-	
-	private GridPane semester12Seite;
-
-	private GridPane semester34Seite;
 
 	@FXML
 	private BorderPane rootPane;

@@ -69,9 +69,14 @@
     -fx-padding: 20.0px;    
 }
 
-.tile_pane:hover{
+#notenuebersicht:hover{
     -fx-border-color: white;
     -fx-border-width: 2.5px;
+}
+
+#stundenplan:hover{
+    -fx-border-color: white;
+    -fx-border-width: 2.5px;    
 }
 
 .tile_heading {

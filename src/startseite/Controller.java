@@ -89,6 +89,7 @@ public class Controller extends Application {
         System.out.println("Method initialize!");
         
         provider = new DataProvider();
+        
 		NavigationHandler.setRootPane(borderPane);
         
         try {

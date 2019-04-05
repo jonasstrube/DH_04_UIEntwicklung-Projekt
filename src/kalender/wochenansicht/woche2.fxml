@@ -171,7 +171,7 @@
                                   <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="69.79998779296875" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <TextArea prefHeight="226.0" prefWidth="106.0" text="Projektmanagement&#10;10:00-15:30 Uhr&#10;A472" GridPane.rowIndex="1" />
+                                    <TextArea prefHeight="226.0" prefWidth="106.0" text="Projektmanagement 10:00-15:30 Uhr A472" wrapText="true" GridPane.rowIndex="1" />
                                  </children>
                               </GridPane>
                               <GridPane layoutX="433.0" layoutY="10.0" GridPane.columnIndex="2">
@@ -186,8 +186,8 @@
                                     <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="35.80001220703127" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <TextArea prefHeight="94.0" prefWidth="106.0" text="Investition und Finanzierung&#10;12:15-16:15 Uhr&#10;A472" GridPane.rowIndex="3" />
-                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Operations Research&#10;10:00 - 11:30 Uhr&#10;A472" GridPane.rowIndex="1" />
+                                    <TextArea prefHeight="94.0" prefWidth="106.0" text="Investition und Finanzierung 12:15-16:15 Uhr A472" wrapText="true" GridPane.rowIndex="3" />
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Operations Research 10:00 - 11:30 Uhr A472" wrapText="true" GridPane.rowIndex="1" />
                                  </children>
                               </GridPane>
                               <GridPane layoutX="433.0" layoutY="10.0" GridPane.columnIndex="1">
@@ -202,8 +202,8 @@
                                     <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="25.399987792968716" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <TextArea prefHeight="128.0" prefWidth="106.0" text="Geldpolitik&#10;9:00-12:15 Uhr&#10;A472" GridPane.rowIndex="1" />
-                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="BoA Industrie&#10;13:15-16:30 Uhr&#10;A472" GridPane.rowIndex="3" />
+                                    <TextArea prefHeight="128.0" prefWidth="106.0" text="Geldpolitik 9:00-12:15 Uhr A472" wrapText="true" GridPane.rowIndex="1" />
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="BoA Industrie 13:15-16:30 Uhr A472" wrapText="true" GridPane.rowIndex="3" />
                                  </children>
                               </GridPane>
                               <GridPane layoutX="10.0" layoutY="10.0">
@@ -218,8 +218,8 @@
                                     <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="35.20003662109377" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <TextArea prefHeight="139.0" prefWidth="106.0" text="Geldpolitik&#10;9:00-12:15 Uhr&#10;A472" GridPane.rowIndex="1" />
-                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Ethik&#10;13:00-16:15 Uhr&#10;A472" GridPane.rowIndex="3" />
+                                    <TextArea prefHeight="139.0" prefWidth="106.0" text="Geldpolitik 9:00-12:15 Uhr A472" wrapText="true" GridPane.rowIndex="1" />
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Ethik 13:00-16:15 Uhr A472" wrapText="true" GridPane.rowIndex="3" />
                                  </children>
                               </GridPane>
                               <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="3">
@@ -230,12 +230,12 @@
                                     <RowConstraints maxHeight="125.79999389648438" minHeight="10.0" prefHeight="66.4" vgrow="SOMETIMES" />
                                     <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="158.39996337890625" vgrow="SOMETIMES" />
                                     <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="38.20001220703125" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="63.200036621093716" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="71.19996337890626" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="76.80001220703122" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="57.59998779296876" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Investition und Finanzierung&#10;9:00-13:00 Uhr&#10;A472" GridPane.rowIndex="1" />
-                                    <TextArea prefHeight="61.0" prefWidth="106.0" text="Operations Research&#10;14:00-15:30 Uhr&#10;A472" GridPane.rowIndex="3" />
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Investition und Finanzierung 9:00-13:00 Uhr A472" wrapText="true" GridPane.rowIndex="1" />
+                                    <TextArea prefHeight="54.0" prefWidth="106.0" text="Operations Research 14:00-15:30 Uhr A472" wrapText="true" GridPane.rowIndex="3" />
                                  </children>
                               </GridPane>
                               <GridPane layoutX="328.0" layoutY="10.0" GridPane.columnIndex="5">

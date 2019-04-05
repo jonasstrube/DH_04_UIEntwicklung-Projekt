@@ -1,0 +1,36 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.lightaccent {
+	-fx-background-color: #0186D9
+}
+
+.darkaccent {
+	-fx-background-color: #015C9B
+}
+
+.lightbackground {
+	-fx-background-color: #EBEBEB
+}
+
+.darkbackground {
+	-fx-background-color: #D7D7D7
+}
+
+.white {
+		-fx-background-color: white
+}
+
+.semesteroverviewpane {
+	-fx-background-radius: 5
+}
+
+.semesteroverviewleftpane {
+}
+
+.separator {
+	-fx-fill: #0186D9;
+	-fx-stroke-width: 0
+}
+
+.debug {
+	-fx-border-color: red
+}

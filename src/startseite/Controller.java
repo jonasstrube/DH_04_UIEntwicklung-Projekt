@@ -17,6 +17,8 @@ public class Controller extends Application {
 
     private GridPane noten;
     
+    private DataProvider provider;
+    
     @FXML
     private BorderPane borderPane;
     
@@ -85,6 +87,8 @@ public class Controller extends Application {
     @FXML
     protected void initialize() {
         System.out.println("Method initialize!");
+        
+        provider = new DataProvider();
         
 		NavigationHandler.setRootPane(borderPane);
         

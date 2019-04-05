@@ -1,6 +1,6 @@
 /* --- JONAS --- */
 .lightaccent {
-    -fx-background-color: #0186D9
+    -fx-background-color: #0186D9 
 }
 
 .darkaccent {
@@ -89,4 +89,15 @@
 }
 
 .tile_caption{
+}
+
+/* --- SOPHIA ---*/
+.weekdays{
+	  -fx-background-color: rgb(2.0,136.0,209.0);
+}
+.scedule{
+	    -fx-border-radius: 0.0px;
+}
+.textarea *.content {
+	 -fx-background-color: rgb(143.0,205.0,255.0);
 }

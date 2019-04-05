@@ -17,6 +17,8 @@ public class Controller extends Application {
 
     private GridPane noten;
     
+    private GridPane stundenplan;
+    
     private DataProvider provider;
     
     @FXML
@@ -82,6 +84,8 @@ public class Controller extends Application {
     @FXML
     private void stundenplan() {
         System.out.println("stundenplan");
+        NavigationHandler.setBackFillPane(mainGridPane);
+        NavigationHandler.navigateTo(stundenplan);
     }
 
     @FXML
@@ -94,9 +98,10 @@ public class Controller extends Application {
         
         try {
             noten = FXMLLoader.load(getClass().getResource("../notenuebersicht/noten.fxml"));
+            stundenplan = FXMLLoader.load(getClass().getResource("../kalender/wochenansicht/woche.fxml"));
         } catch(IOException e) {
             e.printStackTrace();
-        }
+        } 
         
         //setTiles();
 

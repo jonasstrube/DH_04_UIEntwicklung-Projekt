@@ -3,10 +3,12 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -147,6 +149,162 @@
 									</children>
 								</GridPane>
 								<Label alignment="BASELINE_LEFT" text="Filteroptionen" />
+                        <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.4000244140625" minWidth="10.0" percentWidth="16.66666" prefWidth="82.60002250671387" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="551.599983215332" minWidth="10.0" percentWidth="16.66666" prefWidth="78.80001220703124" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="551.599983215332" minWidth="10.0" percentWidth="16.66666" prefWidth="195.99999999999997" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="551.599983215332" minWidth="0.0" percentWidth="16.66666" prefWidth="0.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="551.599983215332" minWidth="10.0" percentWidth="16.66666" prefWidth="198.60000610351557" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="551.599983215332" minWidth="10.0" percentWidth="16.66666" prefWidth="198.60000610351557" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane GridPane.columnIndex="4">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="125.79999389648438" minHeight="10.0" prefHeight="46.000016403198245" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="79.79999542236328" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="91.19998474121095" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="83.00002441406252" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="109.39997558593745" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="94.0" prefWidth="106.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <TextField layoutY="11.0" prefHeight="25.0" prefWidth="109.0" text="TEST" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="433.0" layoutY="10.0" GridPane.columnIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="125.79999389648438" minHeight="10.0" prefHeight="46.000016403198245" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="79.79999542236328" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="91.19998474121095" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="83.00002441406252" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="109.39997558593745" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="94.0" prefWidth="106.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <TextField layoutY="11.0" prefHeight="25.0" prefWidth="109.0" text="TEST" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="433.0" layoutY="10.0" GridPane.columnIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="125.79999389648438" minHeight="10.0" prefHeight="46.000016403198245" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="79.79999542236328" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="91.19998474121095" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="83.00002441406252" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="109.39997558593745" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="94.0" prefWidth="106.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <TextField layoutY="11.0" prefHeight="25.0" prefWidth="109.0" text="TEST" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="125.79999389648438" minHeight="10.0" prefHeight="46.000016403198245" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="79.79999542236328" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="91.19998474121095" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="83.00002441406252" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="109.39997558593745" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="94.0" prefWidth="106.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <TextField layoutY="11.0" prefHeight="25.0" prefWidth="109.0" text="TEST" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="3">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="125.79999389648438" minHeight="10.0" prefHeight="46.000016403198245" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="79.79999542236328" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="91.19998474121095" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="83.00002441406252" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="109.39997558593745" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="94.0" prefWidth="106.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <TextField layoutY="11.0" prefHeight="25.0" prefWidth="109.0" text="TEST" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="328.0" layoutY="10.0" GridPane.columnIndex="5">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="125.79999389648438" minHeight="10.0" prefHeight="46.000016403198245" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="79.79999542236328" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="91.19998474121095" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="257.7999938964844" minHeight="10.0" prefHeight="83.00002441406252" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="254.19999084472653" minHeight="10.0" prefHeight="109.39997558593745" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Pane prefHeight="94.0" prefWidth="106.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <TextField layoutY="11.0" prefHeight="25.0" prefWidth="109.0" text="TEST" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.66666" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.66666" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.66666" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.66666" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.66666" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.66666" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Montag" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Dientag" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Mittwoch" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Donnerstag" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Freitag" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Samstag" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                           </children>
+                        </GridPane>
 							</children>
 						</GridPane>
 					</children>

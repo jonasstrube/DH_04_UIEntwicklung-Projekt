@@ -74,9 +74,6 @@ public class NotenController extends Application {
 	@FXML
 	protected void initialize() {
 		System.out.println("Method initialize!");
-
-		NavigationHandler.setRootPane(rootPane);
-		
 		
 		provider = new DataProvider();
 		

@@ -6,7 +6,6 @@ import java.util.List;
 import data.DataProvider;
 import javafx.application.Application;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -61,15 +60,15 @@ public class NotenController extends Application {
 	@FXML
 	private void semester12() {
 		System.out.println("semester12!");
-		NavigationHandler.setBackFillPane(centerpane);
-		NavigationHandler.navigateTo(semester12Seite);
+		System.out.println("Dead End");
+		// Dead End
 	}
 
 	@FXML
 	private void semester34() {
 		System.out.println("semester34!");
-		NavigationHandler.setBackFillPane(centerpane);
-		NavigationHandler.navigateTo(semester34Seite);
+		System.out.println("Dead End");
+		// Dead End
 	}
 
 	@FXML

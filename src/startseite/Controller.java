@@ -83,7 +83,7 @@ public class Controller extends Application {
 
     @FXML
     private void stundenplan() {
-        System.out.println("stundenplan");
+        System.out.println("stundenplan"); 
         NavigationHandler.setBackFillPane(mainGridPane);
         NavigationHandler.navigateTo(stundenplan);
     }

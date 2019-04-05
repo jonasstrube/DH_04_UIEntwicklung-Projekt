@@ -96,7 +96,7 @@ public class DataProvider {
 		}
 	}
 
-	// Methoden für die Notenübersicht
+	// Methoden fÃ¼r die NotenÃ¼bersicht
 
 	public List<String> getSemesterTexte() {
 		List<String> semesterTexte = new ArrayList();
@@ -113,43 +113,43 @@ public class DataProvider {
 
 		// Schnitt berechnen von dem Jahr
 		// Schnitt auf zwei Nachkommastellen abschneiden
-		// Schnitt den Jahresnoten hinzufügen
+		// Schnitt den Jahresnoten hinzufÃ¼gen
 		double jahr1note = this.calculateNotenschnitt(semester1, semester2);
 		jahr1note = Math.floor(jahr1note * 100) / 100;
 		noten.add(jahr1note);
 
 		// Schnitt berechnen von dem Jahr
 		// Schnitt auf zwei Nachkommastellen abschneiden
-		// Schnitt den Jahresnoten hinzufügen
+		// Schnitt den Jahresnoten hinzufÃ¼gen
 		double jahr2note = this.calculateNotenschnitt(semester3, semester4);
 		jahr2note = Math.floor(jahr2note * 100) / 100;
 		noten.add(jahr2note);
 
 		// Schnitt berechnen von dem Jahr
 		// Schnitt auf zwei Nachkommastellen abschneiden
-		// Schnitt den Jahresnoten hinzufügen
+		// Schnitt den Jahresnoten hinzufÃ¼gen
 		double jahr3note = this.calculateNotenschnitt(semester5, semester6);
 		jahr3note = Math.floor(jahr3note * 100) / 100;
 		noten.add(jahr3note);
 
 		return noten;
 	}
-
-	// Methoden für Daten der Übersicht
+  
+	// Methoden fÃ¼r Daten der Ãœbersicht
 
 	private static Collection<Tile> getNews() {
 		Collection<Tile> news = new ArrayList<Tile>();
-		news.add(new Tile("Heute:", "Die Vorlesung Rechnungslegung fällt morgen aus!"));
-		news.add(new Tile("18.02", "Die Vorlesung Verteilte Systeme fällt am 19.2 aus!"));
-		news.add(new Tile("02.02", "Die Abgabefirst für die UI-DOku ist der 05.04!"));
+		news.add(new Tile("Heute:", "Die Vorlesung Rechnungslegung fÃ¤llt morgen aus!"));
+		news.add(new Tile("18.02", "Die Vorlesung Verteilte Systeme fÃ¤llt am 19.2 aus!"));
+		news.add(new Tile("02.02", "Die Abgabefirst fÃ¼r die UI-DOku ist der 05.04!"));
 		news.add(new Tile("28.01", "Die Vorlesung Datenbanken wird um 1h auf 15 Uhr verschoben!"));
 		return news;
 	}
 
 	private static Collection<Tile> getTiles() {
 		Collection<Tile> tiles = new ArrayList<Tile>();
-		tiles.add(new Tile("Notenübersicht", "Neuste Note: 1,3 in Statistik"));
-		tiles.add(new Tile("Stundenplan", "Nächste Vorlesung: UI in 2h 34min"));
+		tiles.add(new Tile("NotenÃ¼bersicht", "Neuste Note: 1,3 in Statistik"));
+		tiles.add(new Tile("Stundenplan", "NÃ¤chste Vorlesung: UI in 2h 34min"));
 		return tiles;
 	}
 
@@ -159,7 +159,7 @@ public class DataProvider {
 		List<Veranstaltung> veranstaltungen = new ArrayList();
 
 		veranstaltungen.add(new Veranstaltung(null, "Statistik", 0, "Meyer"));
-		veranstaltungen.add(new Veranstaltung(null, "Wirtschaftsinformatik", 0, "Müller"));
+		veranstaltungen.add(new Veranstaltung(null, "Wirtschaftsinformatik", 0, "MÃ¼ller"));
 		veranstaltungen.add(new Veranstaltung(null, "Datenbankentwurf", 0, "Maier"));
 
 		return veranstaltungen;
@@ -183,5 +183,4 @@ public class DataProvider {
 
 		return schnitt;
 	}
-
 }

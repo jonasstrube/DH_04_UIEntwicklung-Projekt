@@ -53,11 +53,11 @@
 						<GridPane>
 							<columnConstraints>
 								<ColumnConstraints hgrow="SOMETIMES" />
-								<ColumnConstraints hgrow="SOMETIMES" />
-								<ColumnConstraints hgrow="SOMETIMES" />
-								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="0.0" />
-								<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
-								<ColumnConstraints hgrow="SOMETIMES" />
+								<ColumnConstraints hgrow="SOMETIMES" maxWidth="108.79999999999998" minWidth="29.79998779296875" prefWidth="108.79999999999998" />
+								<ColumnConstraints hgrow="SOMETIMES" maxWidth="95.60004882812501" minWidth="38.20002441406251" prefWidth="51.599999999999994" />
+								<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="341.3999755859375" minWidth="0.0" prefWidth="314.2000244140625" />
+								<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="76.9999877929688" minWidth="26.199975585937523" prefWidth="48.799999999999955" />
+								<ColumnConstraints hgrow="SOMETIMES" maxWidth="37.4000244140625" minWidth="12.5999755859375" prefWidth="23.0" />
 								<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
 							</columnConstraints>
 							<rowConstraints>
@@ -66,9 +66,9 @@
 							<children>
 								<Button mnemonicParsing="false" text="Heute" />
 								<Button mnemonicParsing="false" text="&lt;" GridPane.columnIndex="2" />
-								<Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="173.0" text="Februar 2019" GridPane.columnIndex="3" />
+								<Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="237.0" text="28.-23. Februar 2019" GridPane.columnIndex="3" />
 								<Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="&gt;" GridPane.columnIndex="4" />
-								<Button mnemonicParsing="false" text="Woche" GridPane.columnIndex="6" />
+								<Button mnemonicParsing="false" text="zur Monatsansicht" GridPane.columnIndex="6" />
 							</children>
 						</GridPane>
 						<GridPane GridPane.rowIndex="1">
@@ -265,12 +265,12 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="Montag" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                              <Label text="Dientag" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                              <Label text="Mittwoch" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                              <Label text="Donnerstag" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                              <Label text="Freitag" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                              <Label text="Samstag" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Montag, 18.02" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Dientag, 19.02." GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Mittwoch, 20.02." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Donnerstag, 21.02." GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Freitag, 22.02." GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label text="Samstag, 23.02" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                            </children>
                         </GridPane>
 							</children>

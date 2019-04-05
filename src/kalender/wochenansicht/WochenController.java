@@ -9,4 +9,10 @@ public class WochenController {
 		System.out.println("Zurueck!");
 		NavigationHandler.navigateBack();
 	}
+	
+	@FXML
+	void logout() {
+		System.out.println("Home!");
+		System.exit(0);
+	}
 }

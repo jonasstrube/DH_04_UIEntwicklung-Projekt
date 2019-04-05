@@ -6,14 +6,19 @@ import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import navigation.NavigationHandler;
 
 public class Controller extends Application {
 
-    private BorderPane noten;
+    private GridPane noten;
     
     @FXML
     private BorderPane borderPane;
+    
+    @FXML
+    GridPane mainGridPane;
     
     @FXML
     private void logout() {
@@ -28,7 +33,8 @@ public class Controller extends Application {
     @FXML
     private void notenuebersicht() {
         System.out.println("notenuebersicht");
-        borderPane.setCenter(noten.getCenter());
+        NavigationHandler.setBackFillPane(mainGridPane);
+        NavigationHandler.navigateTo(noten);
     }
 
     @FXML
@@ -39,8 +45,11 @@ public class Controller extends Application {
     @FXML
     protected void initialize() {
         System.out.println("Method initialize!");
+        
+		NavigationHandler.setRootPane(borderPane);
+        
         try {
-            noten = FXMLLoader.load(getClass().getResource("/src/notenuebersicht/noten.fxml"));
+            noten = FXMLLoader.load(getClass().getResource("../notenuebersicht/noten.fxml"));
         } catch(IOException e) {
             e.printStackTrace();
         }

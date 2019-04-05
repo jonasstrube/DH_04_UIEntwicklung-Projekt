@@ -14,9 +14,9 @@
 
 <!-- Notenübersicht -->
 
-<BorderPane id="borderPane" fx:id="borderPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" styleClass="main_pane" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.startseite.Controller">
+<BorderPane fx:id="borderPane" id="borderPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" styleClass="main_pane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="startseite.Controller">
    <center>
-      <GridPane id="mainGridPane" styleClass="mainPane" BorderPane.alignment="CENTER">
+      <GridPane fx:id="mainGridPane" styleClass="mainPane" BorderPane.alignment="CENTER">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
          </columnConstraints>
@@ -25,7 +25,7 @@
             <RowConstraints maxHeight="516.3999969482422" minHeight="10.0" prefHeight="505.20000000000005" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <GridPane fx:id="mainGridPane" prefHeight="523.0" prefWidth="202.0" GridPane.rowIndex="1">
+            <GridPane prefHeight="523.0" prefWidth="202.0" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
               </columnConstraints>

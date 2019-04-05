@@ -9,6 +9,8 @@ import notenuebersicht.Modul;
 import startseite.Tile;
 
 public class DataProvider {
+	private static boolean dataIsInitialized = false;
+
 	private static List<Modul> semester1;
 	private static List<Modul> semester2;
 
@@ -18,83 +20,83 @@ public class DataProvider {
 	private static List<Modul> semester5;
 	private static List<Modul> semester6;
 
+	// Konstruktor
+	// iniziiert die Daten
+
 	public DataProvider() {
-		semester1 = new ArrayList();
+		if (!dataIsInitialized) {
 
-		for (double i = 0; i < 4; i++) {
-			Modul modul = new Modul();
+			semester1 = new ArrayList();
 
-			modul.setNote(1.0 + (i / 16));
-			modul.setVeranstaltungen(this.getNewVeranstaltungen());
+			for (double i = 0; i < 4; i++) {
+				Modul modul = new Modul();
 
-			semester1.add(modul);
-		}
+				modul.setNote(1.0 + (i / 16));
+				modul.setVeranstaltungen(this.getNewVeranstaltungen());
 
-		semester2 = new ArrayList();
+				semester1.add(modul);
+			}
 
-		for (double i = 0; i < 4; i++) {
-			Modul modul = new Modul();
+			semester2 = new ArrayList();
 
-			modul.setNote(1.0 + (i / 13));
-			modul.setVeranstaltungen(this.getNewVeranstaltungen());
+			for (double i = 0; i < 4; i++) {
+				Modul modul = new Modul();
 
-			semester2.add(modul);
-		}
+				modul.setNote(1.0 + (i / 13));
+				modul.setVeranstaltungen(this.getNewVeranstaltungen());
 
-		semester3 = new ArrayList();
+				semester2.add(modul);
+			}
 
-		for (double i = 0; i < 4; i++) {
-			Modul modul = new Modul();
+			semester3 = new ArrayList();
 
-			modul.setNote(1.0 + (i / 5));
-			modul.setVeranstaltungen(this.getNewVeranstaltungen());
+			for (double i = 0; i < 4; i++) {
+				Modul modul = new Modul();
 
-			semester3.add(modul);
-		}
+				modul.setNote(1.0 + (i / 5));
+				modul.setVeranstaltungen(this.getNewVeranstaltungen());
 
-		semester4 = new ArrayList();
+				semester3.add(modul);
+			}
 
-		for (double i = 0; i < 4; i++) {
-			Modul modul = new Modul();
+			semester4 = new ArrayList();
 
-			modul.setNote(1.0 + (i / 5));
-			modul.setVeranstaltungen(this.getNewVeranstaltungen());
+			for (double i = 0; i < 4; i++) {
+				Modul modul = new Modul();
 
-			semester4.add(modul);
-		}
+				modul.setNote(1.0 + (i / 5));
+				modul.setVeranstaltungen(this.getNewVeranstaltungen());
 
-		semester5 = new ArrayList();
+				semester4.add(modul);
+			}
 
-		for (double i = 0; i < 4; i++) {
-			Modul modul = new Modul();
+			semester5 = new ArrayList();
 
-			modul.setNote(1.0 + (i / 7));
-			modul.setVeranstaltungen(this.getNewVeranstaltungen());
+			for (double i = 0; i < 4; i++) {
+				Modul modul = new Modul();
 
-			semester5.add(modul);
-		}
+				modul.setNote(1.0 + (i / 7));
+				modul.setVeranstaltungen(this.getNewVeranstaltungen());
 
-		semester6 = new ArrayList();
+				semester5.add(modul);
+			}
 
-		for (double i = 0; i < 4; i++) {
-			Modul modul = new Modul();
+			semester6 = new ArrayList();
 
-			modul.setNote(1.0 + (i / 7));
-			modul.setVeranstaltungen(this.getNewVeranstaltungen());
+			for (double i = 0; i < 4; i++) {
+				Modul modul = new Modul();
 
-			semester6.add(modul);
+				modul.setNote(1.0 + (i / 7));
+				modul.setVeranstaltungen(this.getNewVeranstaltungen());
+
+				semester6.add(modul);
+			}
+			
+			dataIsInitialized = true;
 		}
 	}
 
-	private List<Veranstaltung> getNewVeranstaltungen() {
-		List<Veranstaltung> veranstaltungen = new ArrayList();
-
-		veranstaltungen.add(new Veranstaltung(null, "Statistik", 0, "Meyer"));
-		veranstaltungen.add(new Veranstaltung(null, "Wirtschaftsinformatik", 0, "Müller"));
-		veranstaltungen.add(new Veranstaltung(null, "Datenbankentwurf", 0, "Maier"));
-
-		return veranstaltungen;
-	}
+	// Methoden für die Notenübersicht
 
 	public List<String> getSemesterTexte() {
 		List<String> semesterTexte = new ArrayList();
@@ -108,7 +110,7 @@ public class DataProvider {
 
 	public List<Double> getSemesterNoten() {
 		List<Double> noten = new ArrayList();
-		
+
 		// Schnitt berechnen von dem Jahr
 		// Schnitt auf zwei Nachkommastellen abschneiden
 		// Schnitt den Jahresnoten hinzufügen
@@ -119,7 +121,7 @@ public class DataProvider {
 		// Schnitt berechnen von dem Jahr
 		// Schnitt auf zwei Nachkommastellen abschneiden
 		// Schnitt den Jahresnoten hinzufügen
-		double jahr2note = this.calculateNotenschnitt(semester3 , semester4);
+		double jahr2note = this.calculateNotenschnitt(semester3, semester4);
 		jahr2note = Math.floor(jahr2note * 100) / 100;
 		noten.add(jahr2note);
 
@@ -131,6 +133,36 @@ public class DataProvider {
 		noten.add(jahr3note);
 
 		return noten;
+	}
+
+	// Methoden für Daten der Übersicht
+
+	private static Collection<Tile> getNews() {
+		Collection<Tile> news = new ArrayList<Tile>();
+		news.add(new Tile("Heute:", "Die Vorlesung Rechnungslegung fällt morgen aus!"));
+		news.add(new Tile("18.02", "Die Vorlesung Verteilte Systeme fällt am 19.2 aus!"));
+		news.add(new Tile("02.02", "Die Abgabefirst für die UI-DOku ist der 05.04!"));
+		news.add(new Tile("28.01", "Die Vorlesung Datenbanken wird um 1h auf 15 Uhr verschoben!"));
+		return news;
+	}
+
+	private static Collection<Tile> getTiles() {
+		Collection<Tile> tiles = new ArrayList<Tile>();
+		tiles.add(new Tile("Notenübersicht", "Neuste Note: 1,3 in Statistik"));
+		tiles.add(new Tile("Stundenplan", "Nächste Vorlesung: UI in 2h 34min"));
+		return tiles;
+	}
+
+	// private Methoden
+
+	private List<Veranstaltung> getNewVeranstaltungen() {
+		List<Veranstaltung> veranstaltungen = new ArrayList();
+
+		veranstaltungen.add(new Veranstaltung(null, "Statistik", 0, "Meyer"));
+		veranstaltungen.add(new Veranstaltung(null, "Wirtschaftsinformatik", 0, "Müller"));
+		veranstaltungen.add(new Veranstaltung(null, "Datenbankentwurf", 0, "Maier"));
+
+		return veranstaltungen;
 	}
 
 	private double calculateNotenschnitt(List<Modul> semesterA, List<Modul> semesterB) {
@@ -150,22 +182,6 @@ public class DataProvider {
 		double schnitt = notensumme / anzahldernoten;
 
 		return schnitt;
-	}
-
-	private static Collection<Tile> getNews() {
-		Collection<Tile> news = new ArrayList<Tile>();
-		news.add(new Tile("Heute:", "Die Vorlesung Rechnungslegung fällt morgen aus!"));
-		news.add(new Tile("18.02", "Die Vorlesung Verteilte Systeme fällt am 19.2 aus!"));
-		news.add(new Tile("02.02", "Die Abgabefirst für die UI-DOku ist der 05.04!"));
-		news.add(new Tile("28.01", "Die Vorlesung Datenbanken wird um 1h auf 15 Uhr verschoben!"));
-		return news;
-	}
-
-	private static Collection<Tile> getTiles() {
-		Collection<Tile> tiles = new ArrayList<Tile>();
-		tiles.add(new Tile("Notenübersicht", "Neuste Note: 1,3 in Statistik"));
-		tiles.add(new Tile("Stundenplan", "Nächste Vorlesung: UI in 2h 34min"));
-		return tiles;
 	}
 
 }

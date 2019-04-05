@@ -43,11 +43,11 @@
 			</rowConstraints>
 			<children>
 				<Button id="backButton" mnemonicParsing="false"
-					onAction="#zurueck" prefHeight="79.0" prefWidth="136.0"
-					styleClass="darkaccent" text="Zurück" textFill="WHITE" />
+					onAction="#home" prefHeight="79.0" prefWidth="136.0"
+					styleClass="darkaccent" text="Home" textFill="WHITE" />
 				<Button id="logoutButton" mnemonicParsing="false"
 					onAction="#logout" prefHeight="79.0" prefWidth="136.0"
-					styleClass="darkaccent" text="Log out" textFill="WHITE"
+					styleClass="darkaccent" text="Logout" textFill="WHITE"
 					GridPane.columnIndex="2" />
 				<Label fx:id="heading" alignment="CENTER"
 					contentDisplay="CENTER" prefHeight="${heading.parent.width}"

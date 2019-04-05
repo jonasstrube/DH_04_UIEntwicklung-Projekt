@@ -46,8 +46,8 @@ public class NotenController extends Application {
 	private Label semesternote3;
 	
 	@FXML
-	private void zurueck() {
-		System.out.println("zurueck!");
+	private void home() {
+		System.out.println("home!");
 		NavigationHandler.navigateBack();
 		;
 	}
@@ -55,6 +55,7 @@ public class NotenController extends Application {
 	@FXML
 	private void logout() {
 		System.out.println("logout!");
+		System.exit(0);
 	}
 
 	@FXML

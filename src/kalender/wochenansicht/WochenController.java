@@ -1,10 +1,12 @@
 package kalender.wochenansicht;
 
 import javafx.fxml.FXML;
+import navigation.NavigationHandler;
 
 public class WochenController {
 	@FXML
 	void zurueckgehen() {
-		System.out.println("Reaction!");
+		System.out.println("Zurueck!");
+		NavigationHandler.navigateBack();
 	}
 }

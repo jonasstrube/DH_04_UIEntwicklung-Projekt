@@ -1,18 +1,37 @@
 package notenuebersicht.first;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class NotenController extends Application{
+public class Noten12Controller extends Application{
+	
+	private BorderPane parent;
+
+	private BorderPane notenuebersicht;
 
 	@FXML
-	private BorderPane borderPane;
+	private BorderPane basicpane12;
+	
+	@FXML
+	private GridPane centerpane;
 
 	@FXML
 	private void zurueck() {
 		System.out.println("zurueck!");
+		try {
+			notenuebersicht = FXMLLoader.load(getClass().getResource("../noten.fxml"));
+		} catch(IOException e) {
+			System.out.println("Seite konnte nicht geladen werden");
+		}
+		
+		parent = (BorderPane) centerpane.getParent();
+		parent.setCenter(notenuebersicht.getCenter());
 	}
 	
 	@FXML

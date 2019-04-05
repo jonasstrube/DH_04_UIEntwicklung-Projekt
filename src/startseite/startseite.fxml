@@ -14,9 +14,9 @@
 
 <!-- Notenübersicht -->
 
-<BorderPane id="borderPane" fx:id="borderPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" styleClass="main_pane" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.startseite.Controller">
+<BorderPane fx:id="borderPane" id="borderPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" styleClass="main_pane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="startseite.Controller">
    <center>
-      <GridPane id="mainGridPane" styleClass="mainPane" BorderPane.alignment="CENTER">
+      <GridPane fx:id="mainGridPane" styleClass="mainPane" BorderPane.alignment="CENTER">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
          </columnConstraints>
@@ -25,7 +25,7 @@
             <RowConstraints maxHeight="516.3999969482422" minHeight="10.0" prefHeight="505.20000000000005" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <GridPane fx:id="mainGridPane" prefHeight="523.0" prefWidth="202.0" GridPane.rowIndex="1">
+            <GridPane prefHeight="523.0" prefWidth="202.0" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
               </columnConstraints>
@@ -102,12 +102,12 @@
                                                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                </rowConstraints>
                                                                <children>
-                                                                  <Text fx:id="heading" fill="#005b9f" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_heading" text="Notenübersicht">
+                                                                  <Text fx:id="gradeHeading" fill="#005b9f" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_heading" text="Notenübersicht">
                                                                      <font>
                                                                         <Font name="System Bold" size="18.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_caption" text="Neuste Note: 1,3 in Statistik" GridPane.rowIndex="2" />
+                                                                  <Text fx:id="gradeCaption" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_caption" text="Neuste Note: 1,3 in Statistik" GridPane.rowIndex="2" />
                                                                   <ImageView id="icon" GridPane.rowIndex="1">
                                                                      <image>
                                                                         <Image url="@grade.png" />
@@ -129,12 +129,12 @@
                                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                               </rowConstraints>
                                                                <children>
-                                                                  <Text fill="#005b9f" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_heading" text="Stundenplan">
+                                                                  <Text fx:id="calendarHeading" fill="#005b9f" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_heading" text="Stundenplan">
                                                                      <font>
                                                                         <Font name="System Bold" size="18.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_caption" text="Nächste Vorlesung: UI in 2h 34min" GridPane.rowIndex="2" />
+                                                                  <Text fx:id="calendarCaption" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tile_caption" text="Nächste Vorlesung: UI in 2h 34min" GridPane.rowIndex="2" />
                                                                   <ImageView id="icon" GridPane.rowIndex="1">
                                                                      <image>
                                                                         <Image url="@schedule.png" />
@@ -217,12 +217,12 @@
                                                                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                     </rowConstraints>
                                                                      <children>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Heute:">
+                                                                        <Text fx:id="news1Heading" strokeType="OUTSIDE" strokeWidth="0.0" text="Heute:">
                                                                            <font>
                                                                               <Font name="System Bold" size="12.0" />
                                                                            </font>
                                                                         </Text>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Die Vorlesung Rechnungslegung fällt morgen aus!" wrappingWidth="180.20755004882812" GridPane.columnIndex="1" />
+                                                                        <Text fx:id="news1Caption" strokeType="OUTSIDE" strokeWidth="0.0" text="Die Vorlesung Rechnungslegung fällt morgen aus!" wrappingWidth="180.20755004882812" GridPane.columnIndex="1" />
                                                                      </children>
                                                                   </GridPane>
                                                                </children>
@@ -238,12 +238,12 @@
                                                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                      </rowConstraints>
                                                                      <children>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="18.02">
+                                                                        <Text fx:id="news2Heading" strokeType="OUTSIDE" strokeWidth="0.0" text="18.02">
                                                                            <font>
                                                                               <Font name="System Bold" size="12.0" />
                                                                            </font>
                                                                         </Text>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Die Vorlesung Verteilte Systeme fällt am 19.2 aus!" wrappingWidth="180.20755004882812" GridPane.columnIndex="1" />
+                                                                        <Text fx:id="news2Caption" strokeType="OUTSIDE" strokeWidth="0.0" text="Die Vorlesung Verteilte Systeme fällt am 19.2 aus!" wrappingWidth="180.20755004882812" GridPane.columnIndex="1" />
                                                                      </children>
                                                                   </GridPane>
                                                                </children>
@@ -259,12 +259,12 @@
                                                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                      </rowConstraints>
                                                                      <children>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="02.02">
+                                                                        <Text fx:id="news3Heading" strokeType="OUTSIDE" strokeWidth="0.0" text="02.02">
                                                                            <font>
                                                                               <Font name="System Bold" size="12.0" />
                                                                            </font>
                                                                         </Text>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Die Abgabefrist für die UI-Doku ist der 02.04" wrappingWidth="180.20755004882812" GridPane.columnIndex="1" />
+                                                                        <Text fx:id="news3Caption" strokeType="OUTSIDE" strokeWidth="0.0" text="Die Abgabefrist für die UI-Doku ist der 02.04" wrappingWidth="180.20755004882812" GridPane.columnIndex="1" />
                                                                      </children>
                                                                   </GridPane>
                                                                </children>
@@ -280,8 +280,8 @@
                                                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                      </rowConstraints>
                                                                      <children>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Die Vorlesung Datenbanken wird um 1h auf 15 Uhr verschoben!" wrappingWidth="180.20755004882812" GridPane.columnIndex="1" />
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="28.01">
+                                                                        <Text fx:id="news4Caption" strokeType="OUTSIDE" strokeWidth="0.0" text="Die Vorlesung Datenbanken wird um 1h auf 15 Uhr verschoben!" wrappingWidth="180.20755004882812" GridPane.columnIndex="1" />
+                                                                        <Text fx:id="news4Heading" strokeType="OUTSIDE" strokeWidth="0.0" text="28.01">
                                                                            <font>
                                                                               <Font name="System Bold" size="12.0" />
                                                                            </font>

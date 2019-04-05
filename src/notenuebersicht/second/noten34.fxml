@@ -13,10 +13,12 @@
 
 <!-- Notenübersicht -->
 
-<GridPane fx:id="centerpane" styleClass="lightbackground"
-	stylesheets="@../main.css" xmlns="http://javafx.com/javafx/10.0.1"
+<GridPane fx:id="borderPane" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="523.0" prefWidth="824.0" styleClass="lightbackground"
+	stylesheets="@noten.css" xmlns="http://javafx.com/javafx/10.0.1"
 	xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="notenuebersicht.NotenController">
+	fx:controller="notenuebersicht.second.Noten34Controller">
 	<columnConstraints>
 		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
 			prefWidth="100.0" />
@@ -46,13 +48,12 @@
 					onAction="#zurueck" prefHeight="79.0" prefWidth="136.0"
 					styleClass="darkaccent" text="Zurück" textFill="WHITE" />
 				<Button id="logoutButton" mnemonicParsing="false"
-					onAction="#logout" prefHeight="79.0" prefWidth="136.0"
-					styleClass="darkaccent" text="Log out" textFill="WHITE"
-					GridPane.columnIndex="2" />
+					prefHeight="79.0" prefWidth="136.0" styleClass="darkaccent"
+					text="Log out" textFill="WHITE" GridPane.columnIndex="2" />
 				<Label fx:id="heading" alignment="CENTER"
 					contentDisplay="CENTER" prefHeight="${heading.parent.width}"
 					prefWidth="${heading.parent.width}" styleClass="lightaccent"
-					text="Notenübersicht" textAlignment="CENTER" textFill="WHITE"
+					text="Notenübersicht 34" textAlignment="CENTER" textFill="WHITE"
 					GridPane.columnIndex="1" GridPane.halignment="CENTER">
 					<font>
 						<Font size="28.0" />
@@ -112,8 +113,7 @@
 											prefHeight="30.0" vgrow="SOMETIMES" />
 									</rowConstraints>
 									<children>
-										<GridPane onMouseClicked="#semester12"
-											prefHeight="80.8" prefWidth="624.0">
+										<GridPane prefHeight="80.8" prefWidth="624.0">
 											<columnConstraints>
 												<ColumnConstraints percentWidth="90.0" />
 												<ColumnConstraints percentWidth="10.0" />
@@ -148,10 +148,9 @@
 															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 													</rowConstraints>
 													<children>
-														<Label fx:id="semesterlabel1" styleClass="debug"
-															text="Semester 1 &amp; 2" GridPane.columnIndex="1"
-															GridPane.halignment="LEFT" GridPane.rowIndex="1"
-															GridPane.valignment="CENTER">
+														<Label styleClass="debug" text="Semester 1 &amp; 2"
+															GridPane.columnIndex="1" GridPane.halignment="LEFT"
+															GridPane.rowIndex="1" GridPane.valignment="CENTER">
 															<font>
 																<Font size="18.0" />
 															</font>
@@ -162,9 +161,8 @@
 														<String fx:value="debug" />
 													</styleClass>
 												</GridPane>
-												<Label fx:id="semesternote1" styleClass="debug"
-													text="1.4" GridPane.columnIndex="1"
-													GridPane.halignment="CENTER">
+												<Label styleClass="debug" text="1.4"
+													GridPane.columnIndex="1" GridPane.halignment="CENTER">
 													<font>
 														<Font size="18.0" />
 													</font>
@@ -174,8 +172,8 @@
 													GridPane.halignment="RIGHT" />
 											</children>
 										</GridPane>
-										<GridPane onMouseClicked="#semester34"
-											prefHeight="80.8" prefWidth="624.0" GridPane.rowIndex="1">
+										<GridPane prefHeight="80.8" prefWidth="624.0"
+											GridPane.rowIndex="1">
 											<columnConstraints>
 												<ColumnConstraints percentWidth="90.0" />
 												<ColumnConstraints percentWidth="10.0" />
@@ -210,10 +208,9 @@
 															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 													</rowConstraints>
 													<children>
-														<Label fx:id="semesterlabel2" styleClass="debug"
-															text="Semester 3 &amp; 4" GridPane.columnIndex="1"
-															GridPane.halignment="LEFT" GridPane.rowIndex="1"
-															GridPane.valignment="CENTER">
+														<Label styleClass="debug" text="Semester 3 &amp; 4"
+															GridPane.columnIndex="1" GridPane.halignment="LEFT"
+															GridPane.rowIndex="1" GridPane.valignment="CENTER">
 															<font>
 																<Font size="18.0" />
 															</font>
@@ -224,9 +221,8 @@
 														<String fx:value="debug" />
 													</styleClass>
 												</GridPane>
-												<Label fx:id="semesternote2" styleClass="debug"
-													text="1.6" GridPane.columnIndex="1"
-													GridPane.halignment="CENTER">
+												<Label styleClass="debug" text="1.6"
+													GridPane.columnIndex="1" GridPane.halignment="CENTER">
 													<font>
 														<Font size="18.0" />
 													</font>
@@ -272,10 +268,9 @@
 															percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 													</rowConstraints>
 													<children>
-														<Label fx:id="semesterlabel3" styleClass="debug"
-															text="Semester 5 &amp; 6" GridPane.columnIndex="1"
-															GridPane.halignment="LEFT" GridPane.rowIndex="1"
-															GridPane.valignment="CENTER">
+														<Label styleClass="debug" text="Semester 5 &amp; 6"
+															GridPane.columnIndex="1" GridPane.halignment="LEFT"
+															GridPane.rowIndex="1" GridPane.valignment="CENTER">
 															<font>
 																<Font size="18.0" />
 															</font>
@@ -286,9 +281,8 @@
 														<String fx:value="debug" />
 													</styleClass>
 												</GridPane>
-												<Label fx:id="semesternote3" styleClass="debug"
-													text="" GridPane.columnIndex="1"
-													GridPane.halignment="CENTER">
+												<Label styleClass="debug" text=""
+													GridPane.columnIndex="1" GridPane.halignment="CENTER">
 													<font>
 														<Font size="18.0" />
 													</font>
@@ -308,3 +302,4 @@
 		</GridPane>
 	</children>
 </GridPane>
+		
